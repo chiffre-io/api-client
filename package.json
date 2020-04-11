@@ -1,9 +1,9 @@
 {
-  "name": "@chiffre/template-library",
+  "name": "@chiffre/api-client",
   "version": "0.0.0-semantically-released",
-  "description": "Template for Chiffre libraries",
+  "description": "Chiffre.io API client",
   "main": "dist/index.js",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "author": {
     "name": "François Best",
     "email": "francois.best@chiffre.io",
@@ -11,24 +11,35 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/chiffre-io/template-library"
+    "url": "https://github.com/chiffre-io/api-client"
   },
   "keywords": [
     "chiffre",
-    "template"
+    "api",
+    "client"
   ],
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "test": "jest --coverage",
-    "test:watch": "jest --watch",
+    "test": "jest --testPathIgnorePatterns=e2e --colors",
     "build:clean": "rm -rf ./dist",
     "build:ts": "tsc",
     "build": "run-s build:clean build:ts",
-    "ci": "run-s build test"
+    "e2e:setup": "./scripts/e2e-start.sh",
+    "e2e:teardown": "./scripts/e2e-stop.sh",
+    "e2e:run": "jest e2e --runInBand --coverage --colors",
+    "e2e:test": "run-s e2e:setup e2e:run e2e:teardown",
+    "ci": "run-s build e2e:test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@47ng/cloak": "^0.15.1",
+    "@chiffre/api": "^1.0.3",
+    "@chiffre/crypto": "^1.0.0",
+    "@chiffre/crypto-box": "^1.0.1",
+    "axios": "^0.19.2",
+    "session-keystore": "^0.6.1"
+  },
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
     "@types/jest": "^25.2.1",
@@ -36,7 +47,9 @@
     "commitlint": "^8.3.5",
     "husky": "^4.2.5",
     "jest": "^25.3.0",
+    "jest-extended": "^0.11.5",
     "npm-run-all": "^4.1.5",
+    "otplib": "^12.0.1",
     "ts-jest": "^25.3.1",
     "ts-node": "^8.8.2",
     "typescript": "^3.8.3"
