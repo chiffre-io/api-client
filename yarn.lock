@@ -250,9 +250,9 @@
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
 "@chiffre/api@^1.0.3":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@chiffre/api/-/api-1.2.0.tgz#ade4d8ea1f74c67de2760e6268d08847b0aa91e3"
-  integrity sha512-7uP9f2ta/B016d91a9g7If970R2aYQHsB2iKbzzAy5xlbxG9KDejaeeHfwTwugFIMLSPCh6TuL1gNHdK/qsOCQ==
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@chiffre/api/-/api-1.3.0.tgz#7b6a873a428e0d5ea43db1cc325208f2f61943ce"
+  integrity sha512-ieaLLlcziS2Q/TEn83AbCYlNXff8TR1wuB4ka6uWVtYG60wlAdm0Dgp5e5cVSL4ywuaa8F6Z6AANTKB1YOHVVg==
   dependencies:
     "@47ng/check-env" "^2.0.0"
     "@47ng/cloak" "^0.15.0"
@@ -262,6 +262,7 @@
     "@sentry/node" "^5.15.4"
     base32-decode "^1.0.0"
     base32-encode "^1.1.1"
+    dayjs "^1.8.24"
     dotenv "^8.2.0"
     env-alias "^1.0.0"
     fastify "^2.13.1"
@@ -276,7 +277,7 @@
     fluent-schema "^0.10.0"
     ioredis "^4.16.2"
     jsonwebtoken "^8.5.1"
-    knex "^0.20.13"
+    knex "^0.20.14"
     nanoid "^3.1.3"
     otplib "^12.0.1"
     pg "^8.0.2"
@@ -1808,7 +1809,7 @@ data-urls@^1.1.0:
     whatwg-mimetype "^2.2.0"
     whatwg-url "^7.0.0"
 
-dayjs@^1.8.20:
+dayjs@^1.8.20, dayjs@^1.8.24:
   version "1.8.24"
   resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.8.24.tgz#2ef8a2ab9425eaf3318fe78825be1c571027488d"
   integrity sha512-bImQZbBv86zcOWOq6fLg7r4aqMx8fScdmykA7cSh+gH1Yh8AM0Dbw0gHYrsOrza6oBBnkK+/OaR+UAa9UsMrDw==
@@ -3798,10 +3799,10 @@ kleur@^3.0.3:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
-knex@^0.20.13:
-  version "0.20.13"
-  resolved "https://registry.yarnpkg.com/knex/-/knex-0.20.13.tgz#056c310d963f7efce1b3c7397576add1323f1146"
-  integrity sha512-YVl//Te0G5suc+d9KyeI6WuhtgVlxu6HXYQB+WqrccFkSZAbHqlqZlUMogYG3UoVq69c3kiFbbxgUNkrO0PVfg==
+knex@^0.20.14:
+  version "0.20.14"
+  resolved "https://registry.yarnpkg.com/knex/-/knex-0.20.14.tgz#607d46a067f37ba2ea50be9aa8fbffef9ff72d12"
+  integrity sha512-RUBIydapgYGguzuw/YQ3+9TPm6d1qkzEQ7XlmLdFuVkn6GsaZhDHSNX1ycInRZZT8j2blHb7YjTXgLKRCHMI0Q==
   dependencies:
     colorette "1.1.0"
     commander "^4.1.1"
