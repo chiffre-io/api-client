@@ -250,15 +250,15 @@
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
 "@chiffre/api@^1.0.3":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@chiffre/api/-/api-1.3.0.tgz#7b6a873a428e0d5ea43db1cc325208f2f61943ce"
-  integrity sha512-ieaLLlcziS2Q/TEn83AbCYlNXff8TR1wuB4ka6uWVtYG60wlAdm0Dgp5e5cVSL4ywuaa8F6Z6AANTKB1YOHVVg==
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@chiffre/api/-/api-1.4.0.tgz#71a92c74c583437277e568ef0af7df2276f761a9"
+  integrity sha512-2sQAM6PduKrUFGSNDVJZnnT68A7UkCUy700IbWYni2peF/Vlh3fZ2IYOlgFlsC7dPVWdNMTgdNoyt/y5b6YbGQ==
   dependencies:
     "@47ng/check-env" "^2.0.0"
     "@47ng/cloak" "^0.15.0"
     "@47ng/codec" "^0.5.0"
     "@chiffre/crypto" "^1.0.0"
-    "@chiffre/push" "^2.7.0"
+    "@chiffre/push" "^2.8.1"
     "@sentry/node" "^5.15.4"
     base32-decode "^1.0.0"
     base32-encode "^1.1.1"
@@ -277,7 +277,7 @@
     fluent-schema "^0.10.0"
     ioredis "^4.16.2"
     jsonwebtoken "^8.5.1"
-    knex "^0.20.14"
+    knex "^0.20.15"
     nanoid "^3.1.3"
     otplib "^12.0.1"
     pg "^8.0.2"
@@ -305,10 +305,10 @@
     secure-remote-password "^0.3.1"
     tweetnacl "^1.0.3"
 
-"@chiffre/push@^2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@chiffre/push/-/push-2.7.0.tgz#56d360b14def1b2f505a89e0715b5dbf6088dee0"
-  integrity sha512-UbQqzVwd2462gQ6V+obRoQGHA8zX/tDP6p4cYuJac4dOaldE6nzTou1NaVWCsvg32wxPku3HGkuDJDPZ9gbh9Q==
+"@chiffre/push@^2.8.1":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@chiffre/push/-/push-2.8.1.tgz#7626f4a66638928e65b1b28faead6e6318194d2f"
+  integrity sha512-eUmq8nINmQ48akxPVD8mqZOY3aA5HMWpsD/sT1DTinAL3pGr4chFM23gXy5KvjY7+OWCUKi0jPNErjYEjZfKzA==
   dependencies:
     "@47ng/check-env" "^2.0.0"
     dayjs "^1.8.20"
@@ -3799,10 +3799,10 @@ kleur@^3.0.3:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
-knex@^0.20.14:
-  version "0.20.14"
-  resolved "https://registry.yarnpkg.com/knex/-/knex-0.20.14.tgz#607d46a067f37ba2ea50be9aa8fbffef9ff72d12"
-  integrity sha512-RUBIydapgYGguzuw/YQ3+9TPm6d1qkzEQ7XlmLdFuVkn6GsaZhDHSNX1ycInRZZT8j2blHb7YjTXgLKRCHMI0Q==
+knex@^0.20.15:
+  version "0.20.15"
+  resolved "https://registry.yarnpkg.com/knex/-/knex-0.20.15.tgz#b7e9e1efd9cf35d214440d9439ed21153574679d"
+  integrity sha512-WHmvgfQfxA5v8pyb9zbskxCS1L1WmYgUbwBhHojlkmdouUOazvroUWlCr6KIKMQ8anXZh1NXOOtIUMnxENZG5Q==
   dependencies:
     colorette "1.1.0"
     commander "^4.1.1"
