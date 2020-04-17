@@ -250,9 +250,9 @@
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
 "@chiffre/api@^1.0.3":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@chiffre/api/-/api-1.4.0.tgz#71a92c74c583437277e568ef0af7df2276f761a9"
-  integrity sha512-2sQAM6PduKrUFGSNDVJZnnT68A7UkCUy700IbWYni2peF/Vlh3fZ2IYOlgFlsC7dPVWdNMTgdNoyt/y5b6YbGQ==
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@chiffre/api/-/api-1.4.1.tgz#dcdea9b0b1b5b0855189ef4f0494ef23f50fa788"
+  integrity sha512-PLCUK80/IUBodBQ92VSmdyxlNV4E3z8YZX2yhbzlgdxbDnlP35fG5jwuic7kZQR6OXdBS88HFnT97LLpO6Xw9A==
   dependencies:
     "@47ng/check-env" "^2.0.0"
     "@47ng/cloak" "^0.15.0"
