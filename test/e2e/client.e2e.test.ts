@@ -11,13 +11,13 @@ function generateTwoFactorToken(secret: string) {
   return authenticator.generate(secret)
 }
 
-jest.useFakeTimers()
-
 beforeAll(async () => {
   ctx = await setup()
+  jest.useFakeTimers()
 }, 10000)
 
 afterAll(async () => {
+  jest.useRealTimers()
   ctx!.client.lock()
   await ctx!.server.close()
 })
