@@ -257,16 +257,23 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@chiffre/analytics-core@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@chiffre/analytics-core/-/analytics-core-1.2.0.tgz#9d59ceacd1cc5437de39457d14b91c9f99f18480"
+  integrity sha512-DBDA6KVm8lmJQfRqnXNfawbJpALoBRheIO7iOybpUzU62kmlNsENNmUXOF/buIPkZL/Kymh9JoBKtrsSeCCbZw==
+  dependencies:
+    nanoid "^3.0.2"
+
 "@chiffre/api@^1.5.0":
-  version "1.6.3"
-  resolved "https://registry.yarnpkg.com/@chiffre/api/-/api-1.6.3.tgz#9d478a6eb0fbaccf0162447202c40e8338f8a212"
-  integrity sha512-gBkwXRS4p+StZN9b5fIOa6UTtYQYEXkLBCZSJaL2A/7cSkGfimXhMFa8ceZOBNxpdl25jEiXqArM1ysMBF2fGA==
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@chiffre/api/-/api-1.7.0.tgz#d174df0f9ed7dbd234fea78444713890233bd237"
+  integrity sha512-PoK8gwubh5a5kl4izmpkghceSKf7+Z+SsJNZ21eoSRbc6zNabLPFzmwuXuCpXXif21Zgpz0roDRptf/8dT4gGQ==
   dependencies:
     "@47ng/check-env" "^2.0.1"
     "@47ng/cloak" "^0.15.0"
     "@47ng/codec" "^1.0.0"
     "@chiffre/crypto" "^1.0.0"
-    "@chiffre/push" "^2.9.0"
+    "@chiffre/push" "^2.10.0"
     "@sentry/node" "^5.15.5"
     base32-decode "^1.0.0"
     base32-encode "^1.1.1"
@@ -313,12 +320,14 @@
     secure-remote-password "^0.3.1"
     tweetnacl "^1.0.3"
 
-"@chiffre/push@^2.9.0":
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/@chiffre/push/-/push-2.9.0.tgz#39884f65522d590cd7997fa55ed7f69b41ce62aa"
-  integrity sha512-JYoKaKnbp4fv3Mx2toZrrSMmMefnEgsavXfZDSUTNRDdCkuwsVY39Dy7yL9lmDq4GlQXquo7aGAKlUuP1UmXrw==
+"@chiffre/push@^2.10.0":
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/@chiffre/push/-/push-2.10.0.tgz#93e84dbc657bb7b0986c4cb58fe4668101d145b0"
+  integrity sha512-/ojLKg6YscVWZYoFEQMjKH83zjfkrp01ASXU0bQsyyV1n5dy+bw87ehHxahNQpkLrGHE+Svd/NpbgNlD59/pTA==
   dependencies:
     "@47ng/check-env" "^2.0.0"
+    "@chiffre/analytics-core" "^1.2.0"
+    "@chiffre/crypto-box" "^1.0.1"
     dayjs "^1.8.20"
     dotenv "^8.2.0"
     env-alias "^1.0.0"
